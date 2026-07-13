@@ -176,6 +176,7 @@
     text-decoration: none; white-space: nowrap;
   }
   .more-link:hover { text-decoration: underline; }
+  .more-links-group { display: flex; gap: 16px; flex-wrap: wrap; }
   .more-desc { color: var(--ink-dim); font-size: 14.5px; max-width: 680px; }
   .inline-link {
     color: var(--ink); text-decoration: none;
@@ -339,9 +340,13 @@
       <div class="more-item">
         <div class="more-head">
           <span class="more-name">合作店家展示平台</span>
-          <a class="more-link" href="https://github.com/RockLai1207/partner-stores" target="_blank" rel="noopener">GitHub →</a>
+          <span class="more-links-group">
+            <a class="more-link" href="https://rocklai1207.github.io/partner-stores/" target="_blank" rel="noopener">Live Demo →</a>
+            <a class="more-link" href="https://rocklai1207.github.io/partner-stores/admin.html" target="_blank" rel="noopener">管理系統 →</a>
+            <a class="more-link" href="https://github.com/RockLai1207/partner-stores" target="_blank" rel="noopener">GitHub →</a>
+          </span>
         </div>
-        <p class="more-desc">近 200 家合作店家、九大分類的展示網站。以 GitHub Pages + Google Sheets + Apps Script 構成零維運成本架構，非技術人員可直接透過試算表更新內容。</p>
+        <p class="more-desc">近 200 家合作店家、九大分類的展示網站，含店家資料管理後台。以 GitHub Pages + Google Sheets + Apps Script 構成零維運成本架構，非技術人員可直接更新內容。</p>
       </div>
       <div class="more-item">
         <div class="more-head">
