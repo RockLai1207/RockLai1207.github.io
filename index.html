@@ -157,6 +157,32 @@
   }
   .exp-cell p { color: var(--ink-dim); font-size: 14px; line-height: 1.8; }
 
+  /* ---------- more projects ---------- */
+  .more-list { display: flex; flex-direction: column; }
+  .more-item {
+    border-top: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .more-item:last-child { border-bottom: 1px solid var(--line); }
+  .more-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap; margin-bottom: 6px;
+  }
+  .more-name {
+    font-family: var(--display); font-size: 16px; font-weight: 700; color: var(--ink);
+  }
+  .more-link {
+    font-family: var(--mono); font-size: 12.5px; color: var(--lamp);
+    text-decoration: none; white-space: nowrap;
+  }
+  .more-link:hover { text-decoration: underline; }
+  .more-desc { color: var(--ink-dim); font-size: 14.5px; max-width: 680px; }
+  .inline-link {
+    color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid rgba(242,176,94,0.4);
+  }
+  .inline-link:hover { color: var(--lamp); border-bottom-color: var(--lamp); }
+
   /* ---------- contact ---------- */
   .contact { padding: 88px 0 110px; }
   .contact-line {
@@ -295,6 +321,39 @@
       <div class="exp-cell">
         <h3>LEADERSHIP</h3>
         <p>團隊帶領與跨部門協作經驗，技術決策、上線排程與風險管理。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="more-projects">
+    <p class="sec-label">// MORE PROJECTS</p>
+    <h2>其他專案</h2>
+    <div class="more-list">
+      <div class="more-item">
+        <div class="more-head">
+          <span class="more-name">Billing Dashboard 記帳系統</span>
+          <a class="more-link" href="https://github.com/RockLai1207/billing-dashboard" target="_blank" rel="noopener">GitHub →</a>
+        </div>
+        <p class="more-desc">個人帳務管理系統，收支記錄與帳單視覺化。</p>
+      </div>
+      <div class="more-item">
+        <div class="more-head">
+          <span class="more-name">合作店家展示平台</span>
+          <a class="more-link" href="https://github.com/RockLai1207/partner-stores" target="_blank" rel="noopener">GitHub →</a>
+        </div>
+        <p class="more-desc">近 200 家合作店家、九大分類的展示網站。以 GitHub Pages + Google Sheets + Apps Script 構成零維運成本架構，非技術人員可直接透過試算表更新內容。</p>
+      </div>
+      <div class="more-item">
+        <div class="more-head">
+          <span class="more-name">企業與品牌官網交付</span>
+        </div>
+        <p class="more-desc">
+          獨立完成多個產業的官網建置與交付：
+          <a class="inline-link" href="https://www.chienhoclinic.com/" target="_blank" rel="noopener">健和診所</a>（醫療）、
+          <a class="inline-link" href="https://www.zhaoding.com.tw/" target="_blank" rel="noopener">兆鼎檢驗</a>（環境檢測）、
+          <a class="inline-link" href="https://www.94superfresh.com/" target="_blank" rel="noopener">超神鮮食品</a>（餐飲連鎖，含線上購物商城）。
+          涵蓋需求訪談、資訊架構、SEO 與上線維護。
+        </p>
       </div>
     </div>
   </section>
