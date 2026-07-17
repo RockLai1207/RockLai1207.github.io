@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rock Lai — Technical Manager / AI & Backend Engineering</title>
-<meta name="description" content="Rock Lai：技術主管、AI 工程師、後端工程師。十年以上金融支付系統經驗，PHP、Python、Go、LLM 應用開發。">
+<meta name="description" content="Rock Lai：技術主管、AI 工程師、後端工程師。十年以上金融支付系統經驗，PHP、Python、Go、AI Agent、LLM 應用開發。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -291,6 +291,31 @@
 
     <article class="project">
       <div class="p-head">
+        <h3 class="p-name"><a href="https://channel-analyst.vercel.app" target="_blank" rel="noopener">AI Channel Analyst</a></h3>
+        <span class="p-status">LIVE · 免金鑰可體驗</span>
+      </div>
+      <p class="p-desc">
+        輸入任何 YouTube 頻道，AI Agent 自主規劃工具呼叫序列、分析數據、產出內容策略報告——
+        <strong>整個思考過程即時視覺化</strong>。徒手實作 agent loop（不依賴 LangChain 等框架）：
+        模型依工具描述自行決定呼叫順序，每一次 tool call 透過 <strong>SSE 串流</strong>逐步呈現於前端軌跡面板，
+        dashboard 圖表直接以工具回傳為資料源。使用者自帶 API 金鑰（僅存於當次請求、不落地不記 log），
+        伺服器<strong>零 secret、零 token 成本</strong>，可永續公開運行。
+        內建免金鑰範例模式，以真實頻道數據重播完整分析流程。
+      </p>
+      <div class="p-meta">
+        <span class="tag">AI Agent</span><span class="tag">Function Calling</span>
+        <span class="tag">FastAPI</span><span class="tag">SSE Streaming</span>
+        <span class="tag">Gemini</span><span class="tag">YouTube Data API</span>
+        <span class="tag">Vercel</span>
+      </div>
+      <div class="p-links">
+        <a href="https://channel-analyst.vercel.app" target="_blank" rel="noopener">Live Demo →</a>
+        <a href="https://github.com/RockLai1207/channel-analyst" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="p-head">
         <h3 class="p-name"><a href="https://github.com/RockLai1207/suno-prompt-generator" target="_blank" rel="noopener">Suno Prompt Generator</a></h3>
         <span class="p-status">LIVE · 每週實際使用中</span>
       </div>
@@ -389,7 +414,7 @@
       </div>
       <div class="exp-cell">
         <h3>AI ENGINEERING</h3>
-        <p>LLM API 整合、RAG 與向量資料庫、prompt engineering、結構化輸出、few-shot 學習。以生產級工程標準構建 AI 應用。</p>
+        <p>LLM API 整合、AI Agent 設計（function calling / tool use / multi-step planning）、RAG 與向量資料庫、prompt engineering、結構化輸出、SSE 即時串流。以生產級工程標準構建 AI 應用。</p>
       </div>
       <div class="exp-cell">
         <h3>LEADERSHIP</h3>
@@ -513,7 +538,7 @@
     "name:     Rock Lai",
     "role:     Technical Manager · FinTech / payments",
     "base:     Taipei, Taiwan",
-    "stack:    PHP/Laravel · Go · Python · LLM APIs",
+    "stack:    PHP/Laravel · Go · Python · AI Agent · LLM APIs",
     "scale:    200k+ concurrent users · 100+ payment integrations",
     "focus:    backend engineering → AI applications",
     "ships:    tools that real users depend on"
